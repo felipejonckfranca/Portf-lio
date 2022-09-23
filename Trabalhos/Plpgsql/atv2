@@ -1,0 +1,15 @@
+select * from roupas
+update roupas set estampa = true where id = 1
+delete from roupas where id = 2
+update roupas set qtd = 60 where id = 3
+update roupas set qtd = 40, preço = 99.99 where id = 4
+update roupas set preço = preço * 1.1 where id >= 9 and id<= 13
+delete from roupas where id = 11
+
+select estampa, qtd, tam_roupa, coleção, preço, (preço * 0.75)
+as preço_com_25_de_desconto from roupas
+
+alter table roupas add desconto decimal(5,2)
+ insert into roupas (desconto) values (preço*0,25)
+
+select * from clientes inner join vendas on clientes.cod = cod_cliente
