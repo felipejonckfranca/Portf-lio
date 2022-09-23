@@ -1,0 +1,19 @@
+select * from funcinarios
+select nome, round(avg(preço),2) from funcinarios group by preço order by preço
+select nome, trunc(avg(preço),2) from funcinarios group by preço order by preço
+select position (‘a’ in nomes)
+select power (2, 5)
+
+create function pegarminimo(val1 int, val2 int) returns int as $$
+declare
+   minimo int;
+begin
+   if(val1>val2) 
+   then minimo = val2
+   else minimo = val1
+
+   return minimo;
+end;
+$$;
+
+ language plpgsql 
