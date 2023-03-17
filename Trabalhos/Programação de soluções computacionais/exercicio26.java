@@ -26,20 +26,34 @@ public class Aula6 {
         }
         
         //atv A:       
-//        for (int i = 0; i < COL; i++) {
-//            soma+=matriz[1][i];
+//        for (int i = 0; i < LIN; i++) {
+//            soma+=matriz[i][0];
 //        }
 //        JOptionPane.showMessageDialog(null, "A soma dos elementos da primeira coluna é: "+soma);
         
         
         
         //atv B:
+//        int soma1=0;
+//        int soma2=0;
+//        int soma3=0;
+//        
 //        for (int i = 0; i < LIN; i++) {
 //            for (j = 0; j < COL; j++) {
-//                soma+=matriz[i][j];
+//                if(j==0){
+//                    soma1+=matriz[i][j];
+//                }
+//                if(j==1){
+//                    soma2+=matriz[i][j];
+//                }
+//                if(j==2){
+//                    soma3+=matriz[i][j];
+//                }
 //            }
-//            JOptionPane.showMessageDialog(null, "A soma dos elementos da coluna"+(j+1)+" é: "+soma);
 //        }
+//        JOptionPane.showMessageDialog(null, "A soma dos elementos da coluna 1 é: "+soma1);
+//        JOptionPane.showMessageDialog(null, "A soma dos elementos da coluna 2 é: "+soma2);
+//        JOptionPane.showMessageDialog(null, "A soma dos elementos da coluna 3 é: "+soma3);
         
         
         //atv C:
