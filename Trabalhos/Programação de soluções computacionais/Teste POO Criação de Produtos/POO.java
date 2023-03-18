@@ -22,14 +22,14 @@ public class Teste {
             tipos[i]=JOptionPane.showInputDialog("Digite o valor de "+tipos[i]);
         }
         
-        Produto um = new Produto();
-        um.setId(Integer.parseInt(tipos[0]));
-        um.setNome(tipos[1]);
-        um.setDescricao(tipos[2]);
-        um.setPreco(Double.parseDouble(tipos[3]));
-        um.setEstoque(Integer.parseInt(tipos[4]));
+        Produto produto = new Produto();
+        produto.setId(Integer.parseInt(tipos[0]));
+        produto.setNome(tipos[1]);
+        produto.setDescricao(tipos[2]);
+        produto.setPreco(Double.parseDouble(tipos[3]));
+        produto.setEstoque(Integer.parseInt(tipos[4]));
         
-        imprimir(um);
+        imprimir(produto);
     }
     
     
@@ -40,7 +40,7 @@ public class Teste {
         msg+= "Nome: "+produto.getNome()+"\n";
         msg+= "Descrição: "+produto.getDescricao()+"\n";
         msg+= "Preço: "+produto.getPreco()+"\n";
-        msg+= "Estoque: "+produto.getEstoque()+"\n Cadastrar outro produto?";
+        msg+= "Estoque: "+produto.getEstoque()+"\n \nCadastrar outro produto?\n";
 
 //        JOptionPane.showMessageDialog(null, msg);
         
